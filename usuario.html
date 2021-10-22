@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Entrega</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+<body>
+    <header>
+        <section>
+          <div class="divMenuPrincipal">
+            <h1 class="h1Index">
+              <a href="#" class="tituloHome">GREEN GROCERY</a>
+            </h1>   
+            <nav class="navMenuPrincipal">
+              <form action="/productos.html" method="get">
+                <input type="text" placeholder="¿Qué estás buscando?" id="busqueda">
+              </form>
+              <ol class="olMenuPrincipal">
+                <li>
+                  <a href="index.html" style="background-color:white;" onMouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Home</a>
+                </li>
+                <li>
+                  <a href="#" style="background-color:white;" onMouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Iniciar Sesion</a>
+                </li>
+                <li>
+                  <a href="productos.html" style="background-color:white;" onMouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Productos</a>
+                </li>
+                <li>
+                  <a href="envios.html" style="background-color:white;" onMouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Envios</a>
+                </li>
+                <li>
+                  <a href="contacto.html" style="background-color:white;" onMouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Contacto</a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </section>
+    </header>
+    <h1 class="tituloUsuario">Ingresa tus datos:</h1>
+        <section id="user" class="ingresarDatos">
+            <form class="registro active">
+                <h2>¿Es tu primera compra?</h2>
+                <div class="divRegistro">
+                    <h3>Completá con tu información personal</h3>   
+                    <div class="filas">
+                        <p>
+                            <label>Nombre</label>
+                            <input type="text" name="nombre" value="" placeholder="Juan" required="">
+                        </p>
+                        <p>
+                            <label>Apellido</label>
+                            <input type="text" name="apellido" value="" placeholder="Perez" required="">
+                        </p>
+                        <p>
+                            <label>Dirección de entrega</label>
+                            <span class="flexUsuario" style="justify-content: space-between;">
+                                <input type="text" name="calle" style="width:50%;" placeholder="Calle" required="">
+                                <input type="text" name="numero" placeholder="Nro." style="width:15%" required="">
+                                <input type="text" name="piso" placeholder="Piso" style="width:15%" required="">
+                                <input type="text" name="depto" placeholder="Depto." style="width:15%" required="">
+                            </span>
+                        </p>   
+                        <p>
+                            <label>Barrio</label>
+                            <select name="id_barrio" required="">
+                                <option value="">Seleccionar</option>
+                                <optgroup label="Capital Federal"><option value="74">Agronomía</option><option value="63">Almagro</option><option value="64">Balvanera</option><option value="111">Barracas</option><option value="67">Belgrano</option><option value="112">Boedo</option><option value="60">Caballito</option><option value="75">Chacarita</option><option value="76">Coghlan</option><option value="77">Colegiales</option><option value="113">Constitución</option><option value="61">Flores</option><option value="114">Floresta</option><option value="115">La Boca</option><option value="116">Liniers</option><option value="117">Mataderos</option><option value="132">Monserrat</option><option value="118">Monte Castro</option><option value="78">Núñez</option><option value="66">Palermo</option><option value="119">Parque Avellaneda</option><option value="120">Parque Chacabuco</option><option value="79">Parque Chas</option><option value="121">Parque Patricios</option><option value="72">Parque Rivadavia</option><option value="70">Paternal</option><option value="122">Pompeya</option><option value="65">Recoleta</option><option value="73">Retiro</option><option value="86">Saavedra</option><option value="137">San Cristobal</option><option value="124">Velez Sársfield</option><option value="125">Versalles</option><option value="62">Villa Crespo</option><option value="69">Villa del Parque</option><option value="68">Villa Devoto</option><option value="80">Villa General Mitre</option><option value="133">Villa Lugano</option><option value="126">Villa Luro</option><option value="81">Villa Ortúzar</option><option value="82">Villa Pueyrredón</option><option value="129">Villa Real</option><option value="83">Villa Santa Rita</option><option value="131">Villa Soldati</option><option value="71">Villa Urquiza</option></optgroup><optgroup label="Zona Norte"><option value="109">Acassuso</option><option value="107">Beccar</option><option value="106">Florida</option><option value="110">La Horqueta</option><option value="108">La Lucila</option><option value="105">Martinez</option><option value="104">Olivos</option><option value="103">San Isidro</option><option value="102">Vicente Lopez</option></optgroup>                        </select>
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="email" value="" placeholder="juan@perez.com" required="">
+                        </p>
+                        <p>
+                            <label>Celular</label>
+                            <span class="flexUsuario">
+                                <input type="text" name="telefono" value="" placeholder="11-2345-6789" required="" class="w80">
+                            </span>
+                        </p>
+                        <p>
+                            <label>Contraseña</label>
+                            <input type="password" name="clave" required="">
+                            <small>Escribí una contraseña para ingresar directo en tu próxima compra</small>
+                        </p>
+                    </div>
+                    <p><button type="submit"><strong>Registrarme</strong></button></p>                    
+                    <input type="hidden" name="accion" value="registro">
+                    <input type="hidden" name="redirect" value="">
+                </div>    
+            </form>
+            <form class="ingresar active">
+                <h2>
+                    ¿Ya sos cliente?
+                </h2>   
+                <div class="divRegistro">
+                    <h3>Ingresá con tus datos de acceso</h3>   
+                    <div class="filas">
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="email" value="" placeholder="Ingresá tu email" required="">
+                        </p>    
+                        <p>
+                            <label>Contraseña</label>
+                            <input type="password" name="clave" value="" placeholder="Ingresá tu contraseña de acceso">
+                        </p>
+                    </div>    
+                    <p><button type="submit"><strong>Ingresar</strong></button></p>   
+                    <input type="hidden" name="accion" value="login">
+                    <input type="hidden" name="redirect" value="">
+    
+                    <p>
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </p>
+                </div>
+            </form>    
+        </section>
+        <footer>
+            <div class="divFooter">
+              <a href="#">Iniciar Sesion</a> 
+              <a href="productos.html">Productos</a> 
+              <a href="envios.html">Envios</a>
+              <a href="contacto.html">Contacto</a>  
+            </div>
+        </footer>
+
+</body>
+</html>

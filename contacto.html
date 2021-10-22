@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">    
+</head>
+<body class="bodyContacto">
+    <header>
+        <section>
+          <div class="divMenuPrincipal">
+            <h1 class="h1Index">
+              <a href="#" class="tituloHome">GREEN GROCERY</a>
+            </h1>   
+            <nav class="navMenuPrincipal">
+              <form action="/productos.html" method="get">
+                <input type="text" placeholder="¿Qué estás buscando?" id="busqueda">
+              </form>
+              <ol class="olMenuPrincipal">
+                <li>
+                  <a href="index.html" style="background-color:white;" onMouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Home</a>
+                </li>
+                <li>
+                  <a href="usuario.html" style="background-color:white;" onMouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Iniciar Sesion</a>
+                </li>
+                <li>
+                  <a href="productos.html" style="background-color:white;" onMouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Productos</a>
+                </li>
+                <li>
+                  <a href="envios.html" style="background-color:white;" onMouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Envios</a>
+                </li>
+                <li>
+                  <a href="#" style="background-color:white;" onMouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Contacto</a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </section>
+    </header>
+    <h1 class="tituloContacto">Formularo de Contacto</h1>
+        <form action="" class="formularioContacto">
+            <fieldset>
+                <p>
+                <label class="itemsContacto" for="name">Nombre y apellido:</label>
+                <input type="text" name="name" placeholder="Juan Perez">
+                <label class="itemsContacto" for="name">Email:</label>
+                <input type="text" name="name" placeholder="juan@perez.com">
+                <label class="itemsContacto" for="name">Telefono:</label>
+                <input type="text" name="name" placeholder="11-2345-6789">
+                </p>
+                <label class="itemsContacto" for="Motivo de contacto">Motivo de contacto</label>
+
+                <select name="Motivo de contacto" id="">
+                    <option value="">Selecciona el motivo</option>
+                    <option value="Productos">Productos</option>
+                    <option value="Forma de pago">Forma de pago</option>
+                    <option value="Metodo de envio">Metodo de envio</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <br>
+                <label class="itemConsulta" for="consulta">Escribi tu consulta:</label>
+                <br>
+                <textarea name="consulta" id="" cols="168" rows="10" maxlength="1000"></textarea>
+                <br>
+                <form>
+                    <div>Acepta términos y condiciones <input type="checkbox" name="acepta" value="1" /></div>
+                    <div>Acepta recibir novedades sobre nosotros <input type="checkbox" name="acepta" value="1" /></div>
+                </form> 
+                <form class="botones">
+                  <div class="boton">
+                  <input type="submit" value="Enviar Consulta"/>
+                  </div>  
+                  <div class="boton">
+                    <input type="reset" value="Resetear datos"/>
+                  </div>
+                </form>
+            </fieldset>
+        </form>
+        <footer>
+            <div class="divFooter">
+              <a href="usuario.html">Iniciar Sesion</a> 
+              <a href="productos.html">Productos</a> 
+              <a href="envios.html">Envios</a>
+              <a href="#">Contacto</a>  
+            </div>
+        </footer>       
+</body>
+</html>
