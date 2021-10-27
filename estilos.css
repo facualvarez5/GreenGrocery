@@ -121,9 +121,20 @@
   margin-top: 0%;
 }
 
+.quienesSomos{
+  background-color: gainsboro;
+  margin-top: 2%;
+}
+
+.container{
+  background-color: gainsboro;
+}
+
+
 .divFooter{
   background-color: whitesmoke;
   text-align: center;
+  margin-top: 2%;
   
 }
 
