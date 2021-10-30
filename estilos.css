@@ -14,15 +14,24 @@
 .bodyMenuPrincipal{
   /* background-image: url(imagenes/madera.jpg); */
   background-color: gainsboro;
- }
+}
+
+.texto{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 0.5em;
+  padding-right: 0%;
+  font-size: 0.85em;
+}
 
 .bodyMenuPrincipal section{
   position: fixed;
-  width: 100vw;
   top: 0;
   left: 0;
   z-index: 99;
-  background: black;
+  background: gainsboro;
   transition: 0.3s all;
   box-shadow: 0 0.2em 0.5em rgb(0 0 0 / 10%);
   display: block;
@@ -30,21 +39,18 @@
   position: relative;
 }
 
-.bodyMenuPrincipal form{
-  width: 28em;
-  position: relative;
-}
-
 .h1Index{
-  background-color: white;
+  background-color: gainsboro;
   display: block;
   font-size: 2em;
   font-weight: bold;
+  margin-top: 1%;
+  text-align: center;
 }
 
 .h1Index a{
   color: green;
-  background-color:white;
+  background-color:gainsboro;
   font-size: 80%;
 }
 
@@ -118,24 +124,23 @@
 
 .fotoBanner{
   width: 100%;
-  margin-top: 0%;
 }
 
 .quienesSomos{
   background-color: gainsboro;
-  margin-top: 2%;
+  margin-top: 7%;
 }
 
 .container{
   background-color: gainsboro;
+  margin-top: 1%;
 }
 
 
 .divFooter{
   background-color: whitesmoke;
   text-align: center;
-  margin-top: 2%;
-  
+  margin-top: 2%; 
 }
 
 .divFooter a{
@@ -144,6 +149,7 @@
   margin-inline: 50px;
   text-decoration: none;
 }
+
 
 
 /* Parte Iniciar Sesion */
@@ -234,6 +240,7 @@ p{
   background: green;
 }
 
+
 /* Parte productos */
 
 .tituloProductos{
@@ -277,15 +284,16 @@ p{
 /* Parte envios*/
 
 
-#grilla{
+/*#grilla{
   display: grid;
   grid-template-areas:
     "header header"
+    "section section"
     "servicios servicios"
     "footer footer";
-  grid-template-rows: 0 2fr 10%; 
+  grid-template-rows: 0 2fr 10% 10%; 
   grid-template-columns: 90% 10%;
-}
+}*/
 
 .border{
   background-color: gainsboro
@@ -306,10 +314,16 @@ section#servicios{
   display: flex;
   justify-content: center;
   font-size: 150%;
+  margin-top: 0.5%;
 }
 
 section#zonas{
   background-color: gainsboro;
+}
+
+.tituloCarousel{
+  background-color:green;
+  color: white;
 }
 
 
