@@ -1,11 +1,19 @@
 {
-    "name": "user",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC"
-  }
+  "name": "user",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "facualvarez",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facualvarez5/GreenGrocery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/facualvarez5/GreenGrocery/issues"
+  },
+  "homepage": "https://github.com/facualvarez5/GreenGrocery#readme",
+  "description": ""
+}
