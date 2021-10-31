@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 1em;
+    line-height: 1.4em;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+  }
+  
+  /* Parte del index */
+  
+  .bodyMenuPrincipal{
+    background-color: gainsboro;
+
+    .texto{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        padding: 0.5em;
+        padding-right: 0%;
+        font-size: 0.85em;
+      }
+
+    section{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background: gainsboro;
+        transition: 0.3s all;
+        display: block;
+        clear: both;
+        position: relative;
+      }
+
+      .h1Index{
+        background-color: gainsboro;
+        display: block;
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 1%;
+        text-align: center;
+      }
+
+        .h1Index a{
+            color: green;
+            background-color:gainsboro;
+            font-size: 80%;
+        }
+  }
+  
+  .divMenuPrincipal{
+    background-color: white;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  
+
+    .navbar{
+        margin-bottom: 0.5%;
+        margin-top: 1%;
+    }
+
+}
+
+.fotoBanner{
+    width: 100%;
+}
+
+    .quienesSomos{
+        background-color: gainsboro;
+        margin-top: 7%;
+
+        .container{
+            background-color: gainsboro;
+            margin-top: 1%;
+        }
+
+    }
+  
+  
+    .divFooter{
+        background-color: whitesmoke;
+        text-align: center;
+        margin-top: 2%; 
+  
+        a{
+            color: black;
+            display: inline;
+            margin-inline: 50px;
+            text-decoration: none;
+        }
+
+}
+
+  /* Parte Iniciar Sesion */
+  
+  .tituloUsuario{
+    background-color: gainsboro;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ingresarDatos{
+    width: 100%;
+    padding: 1em;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+    position: relative;
+    background-color: white;
+  }
+  
+  #user{
+    display: flex;
+    form {
+        padding: 2em;
+        color: #fff;
+        margin-bottom: 2em;
+        width: 28em;
+        position: relative;
+    }
+  
+        form.registro {
+            background: #210dbb;
+        }
+  
+    .active .divRegistro {
+        display: block;
+    }
+  
+    .divRegistro {
+        display: none;
+    }
+  
+        h3 {
+            margin: 1em 0 2em;
+            font-size: 1em;
+        }
+  
+    .filas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    p{
+        margin: 1em 0;
+        clear: both;
+        position: relative;
+    }
+
+  
+    form input, #user form select {
+        background-color: rgba(255,255,255,0.9);
+        color: #000;
+        border: none;
+        border-bottom: 2px solid #fff;
+        margin: 0.5em 0;
+    }
+  
+    input, textarea {
+        background: none;
+        border: 1px solid #cecece;
+        padding: 0.5em;
+        width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+  
+    form.ingresar {
+        background: green;
+    }
+
+  }
+  
+  
+  /* Parte productos */
+  
+  .tituloProductos{
+    background-color: gainsboro;
+    color:black;
+    text-align: center;
+    font-size: 150%;
+  }
+  
+  .bodyProductos .fotoBanner{
+    width: 100%;
+  }
+  
+  .fotosVerduras{
+    display: flex; flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 5%;
+    padding: 3%;
+  }
+  
+  .fotosVerduras img{
+    width: 30%;
+    padding: 1rem;
+  }
+  
+  .tituloFotos{
+    background-color: green;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    font-size: 200%;
+  }
+  
+  
+  .border{
+    background-color: gainsboro
+  }
+  
+  footer{
+    grid-area: footer;
+  }
+  
+  section#servicios{
+    grid-area: servicios;
+    justify-items:center;
+  }
+  
+  .tituloServicios{
+    color:green;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    margin-top: 0.5%;
+  }
+  
+  section#zonas{
+    background-color: gainsboro;
+  }
+  
+  .tituloCarousel{
+    background-color:green;
+    color: white;
+  }
+  
+  
+  /* Parte Contacto */
+  
+  .bodyContacto{
+    background-color: white;
+  
+  }
+  
+  
+  .bodyContacto footer{
+    padding-top: 1%;
+  }
+  
+  .tituloContacto{
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: gainsboro;
+  }
+  
+  .fotoContacto{
+    width: 100%;
+    margin-top: 0%;
+  }
+  
+  .formularioContacto{
+    color:black;
+    background-color: green;
+    text-align: left;
+  }
+  
+  .itemsContacto{
+    font-size: larger;
+  }
+  
+  .botones{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .botones .boton {
+    color: green;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    transition: all 1s ease;
+    position: relative;
+    padding: 1%;
+  }
+  .botones .boton:hover {
+    background: white;
+    color: #fff !important;
+  }
+  
+  
+  /* FIN */

@@ -5,20 +5,23 @@
   outline: 0;
   font-size: 1em;
   line-height: 1.4em;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'montserrat';
 }
 
 /* Parte del index */
-
-.bodyMenuPrincipal{
-  /* background-image: url(imagenes/madera.jpg); */
+.bodyMenuPrincipal {
   background-color: gainsboro;
 }
 
-.texto{
+.bodyMenuPrincipal .texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: black;
   color: white;
   padding: 0.5em;
@@ -26,20 +29,20 @@
   font-size: 0.85em;
 }
 
-.bodyMenuPrincipal section{
+.bodyMenuPrincipal section {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
   background: gainsboro;
+  -webkit-transition: 0.3s all;
   transition: 0.3s all;
-  box-shadow: 0 0.2em 0.5em rgb(0 0 0 / 10%);
   display: block;
   clear: both;
   position: relative;
 }
 
-.h1Index{
+.bodyMenuPrincipal .h1Index {
   background-color: gainsboro;
   display: block;
   font-size: 2em;
@@ -48,122 +51,77 @@
   text-align: center;
 }
 
-.h1Index a{
+.bodyMenuPrincipal .h1Index a {
   color: green;
-  background-color:gainsboro;
+  background-color: gainsboro;
   font-size: 80%;
 }
 
-/*.h1Index img{
-  width: 8%;
-}*/
-
-.divMenuPrincipal{
+.divMenuPrincipal {
   background-color: white;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navMenuPrincipal{
-  width: calc(100% - 12em);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.divMenuPrincipal .navbar {
+  margin-bottom: 0.5%;
+  margin-top: 1%;
 }
 
-.navMenuPrincipal form{
-  display: block;
-  margin-top: 0em;
-}
-
-.navMenuPrincipal input{
-  border: 1px solid #cecece;
-  padding: 0.5em;
+.fotoBanner {
   width: 100%;
 }
 
-#busqueda:focus{
-  background: gainsboro;
-  padding: 5%;
-}
-
-.olMenuPrincipal{
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  list-style: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-  text-decoration: none;
-  text-align: right;
-  margin-right: 1%; 
-}
-
-.olMenuPrincipal li{
-  display: list-item;
-}
-
-.olMenuPrincipal a{
-  display: inline-block;
-  text-align: center;
-  font-size: 0.9em;
-  color: black;
-  padding: 1em 2em;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.fotoBanner{
-  width: 100%;
-}
-
-.quienesSomos{
+.quienesSomos {
   background-color: gainsboro;
   margin-top: 7%;
 }
 
-.container{
+.quienesSomos .container {
   background-color: gainsboro;
   margin-top: 1%;
 }
 
-
-.divFooter{
+.divFooter {
   background-color: whitesmoke;
   text-align: center;
-  margin-top: 2%; 
+  margin-top: 2%;
 }
 
-.divFooter a{
+.divFooter a {
   color: black;
   display: inline;
   margin-inline: 50px;
   text-decoration: none;
 }
 
-
-
 /* Parte Iniciar Sesion */
-
-.tituloUsuario{
+.tituloUsuario {
   background-color: gainsboro;
   font-size: 2em;
   font-weight: normal;
   margin: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.ingresarDatos{
+.ingresarDatos {
   width: 100%;
   padding: 1em;
   width: 980px;
@@ -175,7 +133,9 @@
   background-color: white;
 }
 
-#user{
+#user {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -183,6 +143,8 @@
   padding: 2em;
   color: #fff;
   margin-bottom: 2em;
+  width: 28em;
+  position: relative;
 }
 
 #user form.registro {
@@ -192,6 +154,7 @@
 #user .active .divRegistro {
   display: block;
 }
+
 #user .divRegistro {
   display: none;
 }
@@ -201,32 +164,32 @@
   font-size: 1em;
 }
 
-.filas {
+#user .filas {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-p{
+#user p {
   margin: 1em 0;
   clear: both;
   position: relative;
 }
 
-#user form{
-  width: 28em;
-  position: relative;
-}
-
-#user form input, #user form select {
-  background-color: rgba(255,255,255,0.9);
+#user form input, #user #user form select {
+  background-color: rgba(255, 255, 255, 0.9);
   color: #000;
   border: none;
   border-bottom: 2px solid #fff;
   margin: 0.5em 0;
 }
 
-#user input, textarea {
+#user input, #user textarea {
   background: none;
   border: 1px solid #cecece;
   padding: 0.5em;
@@ -240,130 +203,132 @@ p{
   background: green;
 }
 
-
 /* Parte productos */
-
-.tituloProductos{
+.tituloProductos {
   background-color: gainsboro;
-  color:black;
+  color: black;
   text-align: center;
   font-size: 150%;
 }
 
-.bodyProductos .fotoBanner{
+.bodyProductos .fotoBanner {
   width: 100%;
 }
 
-.fotosVerduras{
-  display: flex; flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.fotosVerduras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-inline: 5%;
   padding: 3%;
 }
 
-.fotosVerduras img{
+.fotosVerduras img {
   width: 30%;
   padding: 1rem;
 }
 
-.tituloFotos{
+.tituloFotos {
   background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: auto;
-  justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 200%;
 }
 
-
-
-
-
-
-
-/* Parte envios*/
-
-
-/*#grilla{
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "section section"
-    "servicios servicios"
-    "footer footer";
-  grid-template-rows: 0 2fr 10% 10%; 
-  grid-template-columns: 90% 10%;
-}*/
-
-.border{
-  background-color: gainsboro
+.border {
+  background-color: gainsboro;
 }
 
-footer{
+footer {
   grid-area: footer;
 }
 
-section#servicios{
+section#servicios {
   grid-area: servicios;
-  justify-items:center;
+  justify-items: center;
 }
 
-.tituloServicios{
-  color:green;
+.tituloServicios {
+  color: green;
   background-color: gainsboro;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 150%;
   margin-top: 0.5%;
 }
 
-section#zonas{
+section#zonas {
   background-color: gainsboro;
 }
 
-.tituloCarousel{
-  background-color:green;
+.tituloCarousel {
+  background-color: green;
   color: white;
 }
 
-
 /* Parte Contacto */
-
-.bodyContacto{
+.bodyContacto {
   background-color: white;
-
 }
 
-
-.bodyContacto footer{
+.bodyContacto footer {
   padding-top: 1%;
 }
 
-.tituloContacto{
+.tituloContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: black;
   background-color: gainsboro;
 }
 
-.fotoContacto{
+.fotoContacto {
   width: 100%;
   margin-top: 0%;
 }
 
-.formularioContacto{
-  color:black;
+.formularioContacto {
+  color: black;
   background-color: green;
   text-align: left;
 }
 
-.itemsContacto{
+.itemsContacto {
   font-size: larger;
 }
 
-.botones{
+.botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .botones .boton {
@@ -371,21 +336,18 @@ section#zonas{
   font-size: 20px;
   font-weight: 500;
   padding: 0.5em 1.2em;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   border: 2px solid;
+  -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
   padding: 1%;
 }
+
 .botones .boton:hover {
   background: white;
   color: #fff !important;
 }
 
-
 /* FIN */
-
-
-
-
-
+/*# sourceMappingURL=estilos.css.map */
