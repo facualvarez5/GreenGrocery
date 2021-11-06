@@ -108,7 +108,7 @@
 }
 
 /* Parte Iniciar Sesion */
-.tituloUsuario {
+.bodyUsuario .tituloUsuario {
   background-color: gainsboro;
   font-size: 2em;
   font-weight: normal;
@@ -121,7 +121,7 @@
           justify-content: center;
 }
 
-.ingresarDatos {
+.bodyUsuario .ingresarDatos {
   width: 100%;
   padding: 1em;
   width: 980px;
@@ -133,13 +133,16 @@
   background-color: white;
 }
 
-#user {
+.bodyUsuario #user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#user form {
+.bodyUsuario #user form {
   padding: 2em;
   color: #fff;
   margin-bottom: 2em;
@@ -147,24 +150,24 @@
   position: relative;
 }
 
-#user form.registro {
+.bodyUsuario #user form.registro {
   background: #210dbb;
 }
 
-#user .active .divRegistro {
+.bodyUsuario #user .active .divRegistro {
   display: block;
 }
 
-#user .divRegistro {
+.bodyUsuario #user .divRegistro {
   display: none;
 }
 
-#user h3 {
+.bodyUsuario #user h3 {
   margin: 1em 0 2em;
   font-size: 1em;
 }
 
-#user .filas {
+.bodyUsuario #user .filas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,13 +178,13 @@
           justify-content: space-between;
 }
 
-#user p {
+.bodyUsuario #user p {
   margin: 1em 0;
   clear: both;
   position: relative;
 }
 
-#user form input, #user #user form select {
+.bodyUsuario #user form input, .bodyUsuario #user #user form select {
   background-color: rgba(255, 255, 255, 0.9);
   color: #000;
   border: none;
@@ -189,7 +192,7 @@
   margin: 0.5em 0;
 }
 
-#user input, #user textarea {
+.bodyUsuario #user input, .bodyUsuario #user textarea {
   background: none;
   border: 1px solid #cecece;
   padding: 0.5em;
@@ -199,12 +202,12 @@
   appearance: none;
 }
 
-#user form.ingresar {
+.bodyUsuario #user form.ingresar {
   background: green;
 }
 
 /* Parte productos */
-.tituloProductos {
+.bodyProductos .tituloProductos {
   background-color: gainsboro;
   color: black;
   text-align: center;
@@ -215,7 +218,7 @@
   width: 100%;
 }
 
-.fotosVerduras {
+.bodyProductos .fotosProductos .fotosVerduras {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,12 +236,12 @@
   padding: 3%;
 }
 
-.fotosVerduras img {
+.bodyProductos .fotosProductos .fotosVerduras img {
   width: 30%;
   padding: 1rem;
 }
 
-.tituloFotos {
+.bodyProductos .fotosProductos .tituloFotos {
   background-color: green;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,20 +255,13 @@
   font-size: 200%;
 }
 
-.border {
-  background-color: gainsboro;
-}
-
-footer {
-  grid-area: footer;
-}
-
-section#servicios {
+/* Parte envios */
+.bodyEnvios section#servicios {
   grid-area: servicios;
   justify-items: center;
 }
 
-.tituloServicios {
+.bodyEnvios .tituloServicios {
   color: green;
   background-color: gainsboro;
   display: -webkit-box;
@@ -278,25 +274,17 @@ section#servicios {
   margin-top: 0.5%;
 }
 
-section#zonas {
+.bodyEnvios section#zonas {
   background-color: gainsboro;
 }
 
-.tituloCarousel {
-  background-color: green;
-  color: white;
+.bodyEnvios .tituloCarousel {
+  background-color: black;
+  color: green;
 }
 
 /* Parte Contacto */
-.bodyContacto {
-  background-color: white;
-}
-
-.bodyContacto footer {
-  padding-top: 1%;
-}
-
-.tituloContacto {
+.bodyContacto .tituloContacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,24 +293,25 @@ section#zonas {
           justify-content: center;
   color: black;
   background-color: gainsboro;
+  font-size: 120%;
+  padding: 0,3%;
 }
 
-.fotoContacto {
-  width: 100%;
-  margin-top: 0%;
-}
-
-.formularioContacto {
+.bodyContacto .formularioContacto {
   color: black;
   background-color: green;
   text-align: left;
 }
 
-.itemsContacto {
+.bodyContacto .formularioContacto .itemsContacto {
   font-size: larger;
 }
 
-.botones {
+.bodyContacto .formularioContacto #consulta {
+  width: 100%;
+}
+
+.bodyContacto .formularioContacto .botones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +320,7 @@ section#zonas {
           justify-content: center;
 }
 
-.botones .boton {
+.bodyContacto .formularioContacto .botones .boton {
   color: green;
   font-size: 20px;
   font-weight: 500;
@@ -344,9 +333,13 @@ section#zonas {
   padding: 1%;
 }
 
-.botones .boton:hover {
-  background: white;
+.bodyContacto .formularioContacto .botones .boton :hover {
+  background: gainsboro;
   color: #fff !important;
+}
+
+.bodyContacto footer {
+  padding-top: 1%;
 }
 
 /* FIN */
