@@ -60,54 +60,76 @@
       </section>
     </header>
     <section class="seccionFormulario">
-      <h1 class="tituloContacto">Formularo de Contacto</h1>
-          <form action="" class="formularioContacto">
-              <fieldset>
-                  <p>
-                  <label class="itemsContacto" for="name">Nombre y apellido:</label>
-                  <input type="text" name="name" placeholder="Juan Perez">
-                  <label class="itemsContacto" for="name">Email:</label>
-                  <input type="text" name="name" placeholder="juan@perez.com">
-                  <label class="itemsContacto" for="name">Telefono:</label>
-                  <input type="text" name="name" placeholder="11-2345-6789">
-                  </p>
-                  <label class="itemsContacto" for="Motivo de contacto">Motivo de contacto</label>
-
-                  <select name="Motivo de contacto" id="">
-                      <option value="">Selecciona el motivo</option>
-                      <option value="Productos">Productos</option>
-                      <option value="Forma de pago">Forma de pago</option>
-                      <option value="Metodo de envio">Metodo de envio</option>
-                      <option value="Otro">Otro</option>
-                  </select>
-                  <br>
-                  <label class="itemConsulta" for="consulta">Escribi tu consulta:</label>
-                  <br>
-                  <textarea name="consulta" id="consulta" cols="168" rows="10" maxlength="700"></textarea>
-                  <br>
-                  <form>
-                      <div>Acepta términos y condiciones <input type="checkbox" name="acepta" value="1" /></div>
-                      <div>Acepta recibir novedades sobre nosotros <input type="checkbox" name="acepta" value="1" /></div>
-                  </form> 
-                  <form class="botones">
-                    <div class="boton">
-                    <input type="submit" value="Enviar Consulta"/>
-                    </div>  
-                    <div class="boton">
-                      <input type="reset" value="Resetear datos"/>
-                    </div>
-                  </form>
-              </fieldset>
-          </form>
+      <h2 class="tituloContacto">Llena el formulario para realizar tu consulta</h2>
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationServer01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" value="" placeholder="Juan" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" value="" placeholder="Perez" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServerUsername" class="form-label">Usuario</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend3"></span>
+            <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required value="" placeholder="juan@perez.com">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationServer03" class="form-label">Barrio</label>
+          <input type="text" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required value="" placeholder="Palermo">
+        </div>
+        <div class="col-12">
+          <p> Ingrese su consulta. </p>
+          <textarea name="consulta" id="consulta" cols="100" rows="10" maxlength="700"></textarea>
+        </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" aria-describedby="invalidCheck3Feedback" required>
+            <label class="form-check-label" for="invalidCheck3">
+              Acepta nuestros terminos y condiciones.
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar formulario</button>
+        </div>
+      </form>
     </section>
-        <footer>
-            <div class="divFooter">
-              <a href="usuario.html">Iniciar Sesion</a> 
-              <a href="productos.html">Productos</a> 
-              <a href="envios.html">Envios</a>
-              <a href="#">Contacto</a>  
+    <footer class="bg-dark text-center text-white divFooter">
+      <div class="container p-4">
+        <section class="mb-4">
+        </section>
+        <section class="">
+          <div class="row bg-dark">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <a href="productos.html" class="text-white">¿Que vendemos?</a>
+                <div class="itemsFooter">
+                  <p class="text-white">Frutas</p>
+                  <p class="text-white">Verduras</p>
+                  <p class="text-white">Hortalizas</p>
+                </div>
             </div>
-        </footer>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <a href="envios.html" class="text-white">Envios</a>
+                <div class="itemsFooter">
+                  <p class="text-white">Capital Federal</p>
+                  <p class="text-white">24hs luego de tu compra</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <a href="contacto.html" class="text-white">Comunicate</a>
+                <div class="itemsFooter">
+                  <p class="text-white">11-2345-6789</p>
+                  <p class="text-white">IG: GreenGrocery</p>
+                </div>
+              </div>
+        </section>
+      </div>
+    </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

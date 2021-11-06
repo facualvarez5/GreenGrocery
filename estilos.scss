@@ -43,13 +43,13 @@
         font-weight: bold;
         margin-top: 1%;
         text-align: center;
-      }
-
-        .h1Index a{
-            color: green;
-            background-color:gainsboro;
-            font-size: 80%;
+        
+        a{
+          color: green;
+          background-color:gainsboro;
+          font-size: 80%;
         }
+      }
   }
   
   .divMenuPrincipal{
@@ -84,21 +84,7 @@
         }
 
     }
-  
-  
-    .divFooter{
-        background-color: whitesmoke;
-        text-align: center;
-        margin-top: 2%; 
-  
-        a{
-            color: black;
-            display: inline;
-            margin-inline: 50px;
-            text-decoration: none;
-        }
 
-}
 
   /* Parte Iniciar Sesion */
   
@@ -277,48 +263,27 @@
       background-color: gainsboro;
       font-size: 120%;
       padding: 0,3%;
+      padding-bottom: 1%;
     }
     
-    .formularioContacto{
-      color:black;
-      background-color: green;
-      text-align: left;
-    
-    
-      .itemsContacto{
-        font-size: larger;
-      }
 
-      #consulta{
-        width: 100%;
-      }
-      
-      .botones{
-        display: flex;
-        justify-content: center;
-        
-        .boton {
-          color: green;
-          font-size: 20px;
-          font-weight: 500;
-          padding: 0.5em 1.2em;
-          background: rgba(0,0,0,0);
-          border: 2px solid;
-          transition: all 1s ease;
-          position: relative;
-          padding: 1%;
-          
-          :hover {
-            background: gainsboro;
-            color: #fff !important;
-        }
-      }
+    .divFooter{
+      padding: 0%;
     }
+      
+  
   }
 
-    footer{
-      padding-top: 1%;
+  @media (max-width: 935px) {
+    .bodyContacto {
+      
+      #consulta{
+        width: 75%; 
+     } 
+
+
     }
+    
   
   }
   

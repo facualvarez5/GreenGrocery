@@ -94,19 +94,6 @@
   margin-top: 1%;
 }
 
-.divFooter {
-  background-color: whitesmoke;
-  text-align: center;
-  margin-top: 2%;
-}
-
-.divFooter a {
-  color: black;
-  display: inline;
-  margin-inline: 50px;
-  text-decoration: none;
-}
-
 /* Parte Iniciar Sesion */
 .bodyUsuario .tituloUsuario {
   background-color: gainsboro;
@@ -295,51 +282,17 @@
   background-color: gainsboro;
   font-size: 120%;
   padding: 0,3%;
+  padding-bottom: 1%;
 }
 
-.bodyContacto .formularioContacto {
-  color: black;
-  background-color: green;
-  text-align: left;
+.bodyContacto .divFooter {
+  padding: 0%;
 }
 
-.bodyContacto .formularioContacto .itemsContacto {
-  font-size: larger;
-}
-
-.bodyContacto .formularioContacto #consulta {
-  width: 100%;
-}
-
-.bodyContacto .formularioContacto .botones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.bodyContacto .formularioContacto .botones .boton {
-  color: green;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 0.5em 1.2em;
-  background: rgba(0, 0, 0, 0);
-  border: 2px solid;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  position: relative;
-  padding: 1%;
-}
-
-.bodyContacto .formularioContacto .botones .boton :hover {
-  background: gainsboro;
-  color: #fff !important;
-}
-
-.bodyContacto footer {
-  padding-top: 1%;
+@media (max-width: 935px) {
+  .bodyContacto #consulta {
+    width: 75%;
+  }
 }
 
 /* FIN */
