@@ -25,10 +25,10 @@
       </section>
       <section>
         <h1 class="h1Index">
-          <a href="#" class="tituloHome">GREEN GROCERY</a>
+          <a href="#" class="tituloHome">Green Grocery</a>
         </h1>
         <div class="divMenuPrincipal">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">Home</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,8 +52,8 @@
                   </li>
                 </ul>
                 <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
               </div>
             </div>
@@ -61,45 +61,47 @@
         </div>
       </section>
     </header>
-    <section class="seccionFormulario">
-      <h2 class="tituloContacto">Llena el formulario para realizar tu consulta</h2>
-      <form class="row g-3">
-        <div class="col-md-4">
-          <label for="validationServer01" class="form-label">Nombre</label>
-          <input type="text" class="form-control" value="" placeholder="Juan" required>
-        </div>
-        <div class="col-md-4">
-          <label for="validationServer02" class="form-label">Apellido</label>
-          <input type="text" class="form-control" value="" placeholder="Perez" required>
-        </div>
-        <div class="col-md-4">
-          <label for="validationServerUsername" class="form-label">Usuario</label>
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend3"></span>
-            <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required value="" placeholder="juan@perez.com">
+    <h2 class="tituloContacto">Llena el formulario para realizar tu consulta</h2>
+      <section id="form">
+      <div>
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="validationServer01" class="form-label">Nombre</label>
+            <input type="text" class="form-control" value="" placeholder="Juan" required>
           </div>
-        </div>
-        <div class="col-md-6">
-          <label for="validationServer03" class="form-label">Barrio</label>
-          <input type="text" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required value="" placeholder="Palermo">
-        </div>
-        <div class="col-12">
-          <p> Ingrese su consulta. </p>
-          <textarea name="consulta" id="consulta" cols="100" rows="10" maxlength="700"></textarea>
-        </div>
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" aria-describedby="invalidCheck3Feedback" required>
-            <label class="form-check-label" for="invalidCheck3">
-              Acepta nuestros terminos y condiciones.
-            </label>
+          <div class="col-md-4">
+            <label for="validationServer02" class="form-label">Apellido</label>
+            <input type="text" class="form-control" value="" placeholder="Perez" required>
           </div>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Enviar formulario</button>
-        </div>
-      </form>
+          <div class="col-md-4">
+            <label for="validationServerUsername" class="form-label">Usuario</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend3"></span>
+              <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required value="" placeholder="juan@perez.com">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationServer03" class="form-label">Barrio</label>
+            <input type="text" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required value="" placeholder="Palermo">
+          </div>
+          <div class="col-11">
+            <p> Ingrese su consulta. </p>
+            <textarea name="consulta" id="consulta" cols="100" rows="10" maxlength="700"></textarea>
+          </div>
+          </div>
+          <div class="col-11">
+            <div class="input1 form-check">
+              <input class="form-check-input" type="checkbox" value="" aria-describedby="invalidCheck3Feedback" required>
+              <label class="form-check-label" for="invalidCheck3">
+                Acepta nuestros terminos y condiciones.
+              </label>
+            </div>
+          </div>
+          <div class="col-11">
+            <button class="btn btn-primary" type="submit">Enviar formulario</button>
+          </div>
+        </form>
+      </div>
     </section>
     <footer class="bg-dark text-center text-white divFooter">
       <div class="container p-4">
@@ -128,6 +130,9 @@
                   <p class="text-white">11-2345-6789</p>
                   <p class="text-white">IG: GreenGrocery</p>
                 </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <img src="/imagenes/Logo-BLANCO-SinFondo2.png" alt="" width="50%">
               </div>
         </section>
       </div>
